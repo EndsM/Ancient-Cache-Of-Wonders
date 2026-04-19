@@ -1,0 +1,111 @@
+@buildtime = 720
+@zone_cost_minerals = 2000
+@zone_cost_alloys = 1000
+#####
+# Delta level starcage zones
+#####
+# Main
+zone_starcage_world_core_jobs_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		
+		}
+	}
+	unlock = {
+	}
+	convert_to = {
+		# Fallback to these zones if the potential is not met
+		zone_starcage_world_core_jobs
+	}
+	icon = GFX_district_specialization_industrial
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	include = {
+		all
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_core
+	}
+	district_planet_modifier = {
+		pop_bonus_workforce_mult = 0.1
+		planet_building_build_speed_mult = 0.1
+		planet_decision_enact_speed_mult = 0.1
+	}
+}
+
+zone_starcage_world_core_buildings_delta = {
+	icon = GFX_district_specialization_urban
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	include = {
+		all
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_core
+	}
+	district_planet_modifier = {
+		planet_housing_add = 1000
+		planet_buildings_produces_mult = 0.1
+		planet_building_build_speed_mult = 0.15
+	}
+}
+
+zone_starcage_world_core_amenities_delta = {
+	icon = GFX_district_specialization_unity
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	include = {
+		all
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_core
+	}
+	district_planet_modifier = {
+		planet_amenities_add = 1000
+		planet_jobs_unity_produces_mult = 0.15
+		planet_decision_enact_speed_mult = 0.15
+	}
+}
+
+# Secondary
+zone_starcage_world_base_delta = {
+	icon = GFX_district_specialization_hydroponics
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_base
+	swap_type_weight = 5
+}
