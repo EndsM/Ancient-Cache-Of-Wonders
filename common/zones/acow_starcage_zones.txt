@@ -9,7 +9,6 @@ zone_starcage_world_core_jobs_delta = {
 	potential = {
 		exists = owner
 		owner = {
-		
 		}
 	}
 	unlock = {
