@@ -5,10 +5,10 @@ guiTypes = {
 		name = acow_starcage_world_option
 		position = { x = 0 y = 0 }
 		size = { x = 280 y = 40 }
-		movable = no
+		moveable = no
 		buttonType = {
-			name = otion_button
-			quadTextureSprite = "GFX_event_button_452"
+			name = option_button
+			quadTextureSprite = GFX_event_button_452
 			position = {
 				x = 0
 				y = 0
@@ -20,7 +20,6 @@ guiTypes = {
 			name = trigger_icons
 			position = { x = 0 y = 0 }
 			size = { x = 65 y = 28 }
-
 		}
 	}
 
@@ -113,7 +112,6 @@ guiTypes = {
 			# --- JOB GRID ---
 
 			# ROW 1: DARK ENERGY | DARK MATTER | ENERGY
-			# Logic for Dark Energy
 			@y1 = 50
 			containerWindowType = {
 				name = acot_dark_energy
@@ -123,19 +121,125 @@ guiTypes = {
 					name = bg
 					spriteType = GFX_tiles_dark_area_cut_8
 				}
+				effectButtonType = {
+					name = title
+					position = { x = 0 y = 0 }
+					effect = acow_btn_sw_dummy
+					size = { x = 200 y = 27 }
+					buttonFont = "cg_16b"
+					text = acow_var_sw_points_acot_dark_energy_title
+					format = center
+				}
+				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_dark_energy }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_dark_energy]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_dark_energy }
+			}
 
-				# Title
+			containerWindowType = {
+				name = acot_dark_matter
+				size = { width = @container_w height = @container_h }
+				position = { x = @container_x2 y = @y1 }
+				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
+				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_dark_matter_title format = center }
+				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_dark_matter }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_dark_matter]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_dark_matter }
+			}
+
+			containerWindowType = {
+				name = acot_energy
+				size = { width = @container_w height = @container_h }
+				position = { x = @container_x3 y = @y1 }
+				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
+				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_energy_title format = center }
+				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_energy }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_energy]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_energy }
+			}
+
+			# ROW 2: MINERAL | FOOD | TRANSMUTE
+			@y2 = 133
+			containerWindowType = {
+				name = acot_mineral
+				size = { width = @container_w height = @container_h }
+				position = { x = @container_x1 y = @y2 }
+				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
+				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_mineral_title format = center }
+				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_mineral }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_mineral]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_mineral }
+			}
+
+			containerWindowType = {
+				name = acot_food
+				size = { width = @container_w height = @container_h }
+				position = { x = @container_x2 y = @y2 }
+				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
+				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_food_title format = center }
+				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_food }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_food]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_food }
+			}
+
+			containerWindowType = {
+				name = acot_transmute
+				size = { width = @container_w height = @container_h }
+				position = { x = @container_x3 y = @y2 }
+				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
+				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_transmute_title format = center }
+				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_transmute }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_transmute]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_transmute }
+			}
+
+			# ROW 3: ALLOY | ARTISAN
+			@y3 = 216
+			containerWindowType = {
+				name = acot_alloy
+				size = { width = @container_w height = @container_h }
+				position = { x = @container_x1 y = @y3 }
+				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
+				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_alloy_title format = center }
+				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_alloy }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_alloy]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_alloy }
+			}
+
+			containerWindowType = {
+				name = acot_artisan
+				size = { width = @container_w height = @container_h }
+				position = { x = @container_x2 y = @y3 }
+				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
+				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_artisan_title format = center }
+				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_artisan }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_artisan]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_artisan }
 			}
 		}
 
+		# --- Standard Event Integration (REQUIRED FOR SCRIPT) ---
+		containerWindowType = {
+			name = EVENT_DIPLO
+			position = { x = 0 y = -40 }
+			size = { width = @width2 height = 32 }
+			orientation = center_down
+			origo = center_down
 
-
+			listboxType = {
+				name = option_list
+				position = { x = 180 y = 0 }
+				size = { width = 280 height = 40 }
+				spacing = 1
+				scrollbartype = standardlistbox_slider
+				borderSize = { x = 0 y = 0 }
+			}
+		}
 
 		# Hidden Paradox Elements
 		instantTextBoxType = { name = "alien_message" font = "cg_16b" position = { x = 9999 y = 9999 } maxWidth = 1 maxHeight = 1 }
-		buttonType = { name = "focus_button" position = { x = 9999 y = 9999 } spriteType = "GFX_fleetview_focus" }
-		containerWindowType = { name = "portrait" position = { x = 9999 y = 9999 } }
-		iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" position = { x = 9999 y = 9999 } }
+		buttonType = { name = "focus_button" position = { x = 9999 y = 9999 } spriteType = GFX_fleetview_focus }
+		containerWindowType = { name = portrait position = { x = 9999 y = 9999 } }
+		iconType = { name = empire_info_bg spriteType = GFX_diplomacy_dark_fade_bg position = { x = 9999 y = 9999 } }
 
 	}
 }
