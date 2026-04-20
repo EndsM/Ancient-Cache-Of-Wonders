@@ -31,7 +31,6 @@ triggered_planet_modifier = {
 			is_gestalt = no
 		}
 	}
-	# Unlink AOW, we can step base value based on district core/secondary and level
 	job_acot_dark_energy_man_add = $number$
 	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_dark_energy|
 }
@@ -55,7 +54,6 @@ triggered_planet_modifier = {
 			is_gestalt = no
 		}
 	}
-	# Unlink AOW, we can step base value based on district core/secondary and level
 	job_acot_dark_matter_man_add = $number$
 	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_dark_matter|
 }
@@ -79,7 +77,6 @@ triggered_planet_modifier = {
 			is_gestalt = no
 		}
 	}
-	# Unlink AOW, we can step base value based on district core/secondary and level
 	job_acot_energyman_add = $number$
 	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_energy|
 }
@@ -103,7 +100,6 @@ triggered_planet_modifier = {
 			is_gestalt = no
 		}
 	}
-	# Unlink AOW, we can step base value based on district core/secondary and level
 	job_acot_mineralman_add = $number$
 	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_mineral|
 }
@@ -120,3 +116,93 @@ triggered_planet_modifier = {
 }
 
 # food
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	job_acot_foodman_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_food|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	job_acot_fooddrone_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_food|
+}
+
+# transmute
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	job_acot_transmute_man_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_transmute|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	job_acot_transmute_drone_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_transmute|
+}
+
+# alloy
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	job_acot_alloyman_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_alloy|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	job_acot_alloydrone_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_alloy|
+}
+
+# artisan
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	job_acot_artisan_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_artisan|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	job_acot_artisan_drone_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_artisan|
+}
