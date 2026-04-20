@@ -1,0 +1,13 @@
+acow_init_if_not = {
+	if = {
+		limit = {
+			NOT = {
+				is_variable_set = $KEY$
+			}
+		}
+		set_variable = {
+			which = $KEY$
+			value = $V$
+		}
+	}
+}
