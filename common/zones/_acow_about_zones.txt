@@ -1,0 +1,4 @@
+# In convert_to field, consider it will auto convert zones when potential requirements are not met.
+# And convert to from top to bottom, the first one that req are met, if we have delta zones,
+# and upgrade capital, if we don't include the upper level zones, it will convert to lower levels.
+# So, we will have to include all other levels of the same zone, so it will actually get auto upgraded(maybe)
