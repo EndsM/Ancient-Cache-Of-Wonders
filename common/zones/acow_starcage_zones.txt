@@ -38,6 +38,10 @@ zone_starcage_world_core_jobs_delta = {
 		planet_building_build_speed_mult = 0.1
 		planet_decision_enact_speed_mult = 0.1
 	}
+	inline_script={
+		script = zones/acow_starcage_world_zone_jobs
+		number = 50
+	}
 }
 
 zone_starcage_world_core_buildings_delta = {
@@ -61,6 +65,10 @@ zone_starcage_world_core_buildings_delta = {
 		planet_housing_add = 1000
 		planet_buildings_produces_mult = 0.1
 		planet_building_build_speed_mult = 0.15
+	}
+	inline_script={
+		script = zones/acow_starcage_world_zone_jobs
+		number = 50
 	}
 }
 
@@ -86,6 +94,10 @@ zone_starcage_world_core_amenities_delta = {
 		planet_jobs_unity_produces_mult = 0.15
 		planet_decision_enact_speed_mult = 0.15
 	}
+	inline_script={
+		script = zones/acow_starcage_world_zone_jobs
+		number = 50
+	}
 }
 
 # Secondary
@@ -107,4 +119,8 @@ zone_starcage_world_base_delta = {
 	}
 	swap_type = AOW_district_starcage_world_base
 	swap_type_weight = 5
+	inline_script={
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
 }
