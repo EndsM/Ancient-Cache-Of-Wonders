@@ -1,0 +1,84 @@
+@core_buildtime = 360
+@core_zone_cost_minerals = 2000
+@core_zone_cost_alloys = 1000
+@secondary_buildtime = 720
+@secondary_zone_cost_minerals = 3000
+@secondary_zone_cost_alloys = 1500
+# Core
+zone_star_guardian_core_fortress_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_star_guardian_core_fortress_delta
+		zone_star_guardian_core_fortress
+	}
+	icon = GFX_acot_zone_ae_army
+	base_buildtime = @core_buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @core_zone_cost_minerals
+			alloys = @core_zone_cost_alloys
+		}
+	}
+	include = {
+		all
+	}
+	zone_sets = {
+		zone_star_guardian
+		zone_star_guardian_core
+	}
+	inline_script = {
+		script = jobs/acow_zone_job_acot_soldier
+		AMOUNT = 1000
+	}
+	triggered_district_planet_modifier = {
+		planet_housing_add = -500
+	}
+}
+
+zone_star_guardian_core_order_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_star_guardian_core_order_delta
+		zone_star_guardian_core_order
+	}
+	icon = GFX_acot_zone_ae_urban
+	base_buildtime = @core_buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @core_zone_cost_minerals
+			alloys = @core_zone_cost_alloys
+		}
+	}
+	include = {
+		all
+	}
+	zone_sets = {
+		zone_star_guardian
+		zone_star_guardian_core
+	}
+	inline_script = {
+		script = jobs/acow_zone_job_acot_enforcer
+		AMOUNT = 1000
+	}
+	triggered_district_planet_modifier = {
+		planet_housing_add = -500
+	}
+}
+
+# Secondaries

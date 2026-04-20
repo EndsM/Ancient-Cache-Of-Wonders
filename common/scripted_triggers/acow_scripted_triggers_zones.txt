@@ -1,0 +1,2 @@
+# TODO: We will reference the ACOT and AOT's trigger checking logic, to create a compatibility adapter layer here
+# Before that, we can just add delta and alpha level now
