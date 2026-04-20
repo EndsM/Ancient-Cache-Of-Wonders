@@ -94,6 +94,10 @@ zone_star_guardian_secondary_energy_delta = {
 	}
 	unlock = {
 	}
+	convert_to = {
+		zone_star_guardian_secondary_energy_alpha
+		zone_star_guardian_secondary_energy
+	}
 	icon = GFX_acot_zone_dm_energy
 	base_buildtime = @secondary_buildtime
 	resources = {
@@ -132,6 +136,10 @@ zone_star_guardian_secondary_alloys_delta = {
 		has_ascended_capital = no
 	}
 	unlock = {
+	}
+	convert_to = {
+		zone_star_guardian_secondary_alloys_alpha
+		zone_star_guardian_secondary_alloys
 	}
 	icon = GFX_acot_zone_dm_alloy
 	base_buildtime = @secondary_buildtime
@@ -172,6 +180,10 @@ zone_star_guardian_secondary_fortress_delta = {
 	}
 	unlock = {
 	}
+	convert_to = {
+		zone_star_guardian_secondary_fortress_alpha
+		zone_star_guardian_secondary_fortress
+	}
 	icon = GFX_acot_zone_dm_army
 	base_buildtime = @secondary_buildtime
 	resources = {
@@ -210,6 +222,10 @@ zone_star_guardian_secondary_order_delta = {
 		has_ascended_capital = no
 	}
 	unlock = {
+	}
+	convert_to = {
+		zone_star_guardian_secondary_order_alpha
+		zone_star_guardian_secondary_order
 	}
 	icon = GFX_acot_zone_dm_urban
 	base_buildtime = @secondary_buildtime
