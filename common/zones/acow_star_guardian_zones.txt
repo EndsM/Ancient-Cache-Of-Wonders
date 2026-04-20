@@ -9,8 +9,9 @@ zone_star_guardian_core_fortress_delta = {
 	potential = {
 		exists = owner
 		owner = {
-			has_technology = tech_acot_dm_stronghold
 		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
 	}
 	unlock = {
 	}
@@ -46,8 +47,9 @@ zone_star_guardian_core_order_delta = {
 	potential = {
 		exists = owner
 		owner = {
-			has_technology = tech_acot_dm_ancient_control_center
 		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
 	}
 	unlock = {
 	}
