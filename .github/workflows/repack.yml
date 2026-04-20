@@ -23,15 +23,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v6
 
-      - name: Delete older AutoBuild release and tag
-        # Delete the old tag before creating the new one
-        uses: dev-drprasad/delete-tag-and-release@v1.1
-        with:
-          delete_release: true
-          tag_name: AutoBuild
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Extract Mod Name from descriptor.mod
         id: extract_name
         run: |
@@ -80,8 +71,15 @@ jobs:
           # Zips both the folder and the .mod file together
           zip -r "${{ env.MOD_NAME }}.zip" ./*
 
+      - name: Delete older AutoBuild release and tag
+        # Use native GitHub CLI to delete the old tag and release before creating the new one
+        run: |
+          gh release delete AutoBuild --yes --cleanup-tag || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Publish Pre-Release (AutoBuild)
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: AutoBuild
           name: "AutoBuild"
