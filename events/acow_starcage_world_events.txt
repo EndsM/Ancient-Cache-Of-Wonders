@@ -1,0 +1,14 @@
+namespace = acow_starcage_world_events
+country_event = {
+	id = acow_starcage_world_events.1
+	title = acow_starcage_world_events.1.title
+	desc = OK
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = acow_starcage_world
+	picture = GFX_evt_AOW_MEGA_starcage_world
+	option = {
+		name = OK
+		custom_gui = acow_starcage_world_option
+	}
+}

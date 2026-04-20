@@ -1,0 +1,141 @@
+guiTypes = {
+	@width1 = 660
+	@width2 = 640
+	containerWindowType = {
+		name = acow_starcage_world_option
+		position = { x = 0 y = 0 }
+		size = { x = 280 y = 40 }
+		movable = no
+		buttonType = {
+			name = otion_button
+			quadTextureSprite = "GFX_event_button_452"
+			position = {
+				x = 0
+				y = 0
+			}
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+		OverlappingElementsBoxType = {
+			name = trigger_icons
+			position = { x = 0 y = 0 }
+			size = { x = 65 y = 28 }
+
+		}
+	}
+
+	containerWindowType = {
+		name = acow_starcage_world
+		orientation = CENTER
+		origo = CENTER
+		moveable = yes
+		size = {
+			x = @width1
+			y = 620
+		}
+
+		background = {
+			name = background
+			quadTextureSprite = GFX_tile_large_bg_plain
+		}
+
+		iconType = {
+			name = empire_header_line
+			quadTextureSprite = GFX_line_center
+			position = {
+				x = -256
+				y = 30
+			}
+			orientation = CENTER_UP
+			alwaysTransparent = yes
+		}
+
+		instantTextboxType = {
+			name = acow_title
+			font= malgun_goth_24
+			position = {
+				x = 0
+				y = 10
+			}
+			maxWidth = @width1
+			maxHeight = 30
+			alwaysTransparent = yes
+			fixedSize = no
+			format = center
+			text = acow_starcage_management_title
+			text_color_code = G
+		}
+
+		buttonType = {
+			name = close
+			quadTextureSprite = GFX_main_close_button
+			position = {
+				x = -44
+				y = 6
+			}
+			orientation = UPPER_RIGHT
+			shortcut = "ESCAPE"
+			clicksound = back_click
+		}
+
+		@container_w = 200
+		@container_h = 73
+		@container_x1 = 10
+		@container_x2 = 220
+		@container_x3 = 430
+		@container_y_base = 50
+		@row_spacing = 83
+
+		containerWindowType = {
+			name = container
+			size = { width = @width2 height = 550 }
+			position = { x = 10 y = 50 }
+
+			background = {
+				name = background
+				spriteType = GFX_tiles_dark_area_cut_8
+			}
+
+			verticalScrollbar = right_vertical_slider
+
+			# --- Point Display Area ---
+			effectButtonType = {
+				name = points_info
+				position = { x = 0 y = 5 }
+				effect = acow_btn_sw_dummy
+				size = { x = 640 y = 40 }
+				text = acow_ui_remaining_points
+				buttonFont = "malgun_goth_24"
+				format = center
+				alwaysTransparent = yes
+			}
+
+			# --- JOB GRID ---
+
+			# ROW 1: DARK ENERGY | DARK MATTER | ENERGY
+			# Logic for Dark Energy
+			@y1 = 50
+			containerWindowType = {
+				name = acot_dark_energy
+				size = { width = @container_w height = @container_h }
+				position = { x = @container_x1 y = @y1 }
+				background = {
+					name = bg
+					spriteType = GFX_tiles_dark_area_cut_8
+				}
+
+				# Title
+			}
+		}
+
+
+
+
+		# Hidden Paradox Elements
+		instantTextBoxType = { name = "alien_message" font = "cg_16b" position = { x = 9999 y = 9999 } maxWidth = 1 maxHeight = 1 }
+		buttonType = { name = "focus_button" position = { x = 9999 y = 9999 } spriteType = "GFX_fleetview_focus" }
+		containerWindowType = { name = "portrait" position = { x = 9999 y = 9999 } }
+		iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" position = { x = 9999 y = 9999 } }
+
+	}
+}
