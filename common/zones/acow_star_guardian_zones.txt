@@ -40,3 +40,38 @@ zone_star_guardian_core_fortress_delta = {
 		planet_housing_add = -500
 	}
 }
+
+zone_star_guardian_core_order_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+	}
+	unlock = {
+	}
+	icon = GFX_district_specialization_broken_shackles_memorial
+	base_buildtime = @core_buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @core_zone_cost_minerals
+			alloys = @core_zone_cost_alloys
+		}
+	}
+	include = {
+		all
+	}
+	zone_sets = {
+		zone_star_guardian
+		zone_star_guardian_core
+	}
+	inline_script = {
+		script = jobs/acow_zone_job_acot_soldier
+		AMOUNT = 500
+	}
+	triggered_district_planet_modifier = {
+		planet_housing_add = -500
+	}
+}
+
+# Secondaries
