@@ -85,7 +85,16 @@ zone_star_guardian_core_order_delta = {
 
 # Secondaries
 zone_star_guardian_secondary_energy_delta = {
-	icon = GFX_district_specialization_energy
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	icon = GFX_acot_zone_dm_energy
 	base_buildtime = @secondary_buildtime
 	resources = {
 		category = planet_zones
@@ -114,9 +123,17 @@ zone_star_guardian_secondary_energy_delta = {
 	}
 }
 
-#合金
 zone_star_guardian_secondary_alloys_delta = {
-	icon = GFX_district_specialization_foundry
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	icon = GFX_acot_zone_dm_alloy
 	base_buildtime = @secondary_buildtime
 	resources = {
 		category = planet_zones
@@ -145,9 +162,17 @@ zone_star_guardian_secondary_alloys_delta = {
 	}
 }
 
-#堡垒
 zone_star_guardian_secondary_fortress_delta = {
-	icon = GFX_district_specialization_fortress
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	icon = GFX_acot_zone_dm_army
 	base_buildtime = @secondary_buildtime
 	resources = {
 		category = planet_zones
@@ -176,22 +201,18 @@ zone_star_guardian_secondary_fortress_delta = {
 	}
 }
 
-#秩序
 zone_star_guardian_secondary_order_delta = {
-	icon = GFX_district_specialization_broken_shackles_memorial
-	base_buildtime = @secondary_buildtime
 	potential = {
-		# planet scope
-		hidden_trigger = {
-			exists = owner
+		exists = owner
+		owner = {
 		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
 	}
 	unlock = {
-		# planet scope
-		hidden_trigger = {
-			exists = owner
-		}
 	}
+	icon = GFX_acot_zone_dm_urban
+	base_buildtime = @secondary_buildtime
 	resources = {
 		category = planet_zones
 		cost = {
