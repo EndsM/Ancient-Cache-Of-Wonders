@@ -1,0 +1,122 @@
+# We don't modify the district based jobs adding, instead, create jobs from mod's zones
+# fallback
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	# Unlink AOW, we can step base value based on district core/secondary and level
+	job_acot_enforcer_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|AOW_var_sw_points|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	job_acot_enforcer_drone_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|AOW_var_sw_points|
+}
+
+# dark energy
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	# Unlink AOW, we can step base value based on district core/secondary and level
+	job_acot_dark_energy_man_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_dark_energy|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	job_acot_dark_energy_drone_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_dark_energy|
+}
+
+# dark matter
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	# Unlink AOW, we can step base value based on district core/secondary and level
+	job_acot_dark_matter_man_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_dark_matter|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	job_acot_dark_matter_drone_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_dark_matter|
+}
+
+# energy
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	# Unlink AOW, we can step base value based on district core/secondary and level
+	job_acot_energyman_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_energy|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	job_acot_energydrone_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_energy|
+}
+
+# mineral
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	# Unlink AOW, we can step base value based on district core/secondary and level
+	job_acot_mineralman_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_mineral|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	job_acot_mineraldrone_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_mineral|
+}
+
+# food

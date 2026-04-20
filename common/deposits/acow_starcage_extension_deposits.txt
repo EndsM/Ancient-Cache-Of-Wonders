@@ -1,0 +1,11 @@
+acow_d_starcage_world_extension = {
+	is_for_colonizable = yes
+	icon = AOW_d_starcage_world
+	category = deposit_cat_rare
+	drop_weight = {
+		weight = 0
+	}
+	# Maybe make use of it later
+	triggered_planet_modifier = {
+	}
+}

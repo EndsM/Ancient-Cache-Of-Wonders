@@ -13,9 +13,10 @@ acow_decision_starcage_world = {
 		}
 	}
 	effect = {
-		# To avoid strange things, ensure the maxium exist first
+		# To avoid strange things, ensure the maximum exist first
 		acow_init_if_not = {
 			key = AOW_var_sw_points
+			# TODO: Create a new upgrade level for this megastructure, that will increase the maximum
 			value = @AOW_var_max_sw_points
 		}
 		# SR jobs
@@ -36,6 +37,27 @@ acow_decision_starcage_world = {
 		acow_init_if_not = {
 			key = acow_var_sw_points_acot_mineral
 			value = 0
+		}
+		acow_init_if_not = {
+			key = acow_var_sw_points_acot_food
+			value = 0
+		}
+		acow_init_if_not = {
+			key = acow_var_sw_points_acot_transmute
+			value = 0
+		}
+		acow_init_if_not = {
+			key = acow_var_sw_points_acot_alloy
+			value = 0
+		}
+		acow_init_if_not = {
+			key = acow_var_sw_points_acot_artisan
+			value = 0
+		}
+		owner = {
+			country_event = {
+				id = AOW_evt_starcage_world.500
+			}
 		}
 	}
 }
