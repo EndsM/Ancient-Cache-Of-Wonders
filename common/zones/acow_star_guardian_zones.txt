@@ -53,6 +53,9 @@ zone_star_guardian_core_order_delta = {
 	}
 	unlock = {
 	}
+	convert_to = {
+		zone_star_guardian_core_order
+	}
 	icon = GFX_acot_zone_dm_urban
 	base_buildtime = @core_buildtime
 	resources = {
