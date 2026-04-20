@@ -2,3 +2,5 @@
 # And convert to from top to bottom, the first one that req are met, if we have delta zones,
 # and upgrade capital, if we don't include the upper level zones, it will convert to lower levels.
 # So, we will have to include all other levels of the same zone, so it will actually get auto upgraded(maybe)
+
+# As of 2026.4.20, convert_to seems not working :(

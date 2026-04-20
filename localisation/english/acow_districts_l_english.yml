@@ -13,3 +13,33 @@
 
   zone_star_guardian_core_order_delta: "Delta Order Center"
   zone_star_guardian_core_order_delta_desc: "As we arrived at this new age, we must understand that our defense is hard to be break from outside, so we must ensure we also strengthen our defense towards inside."
+
+  zone_star_guardian_secondary_energy_delta: "Delta Energy Center"
+  zone_star_guardian_secondary_energy_delta_desc: ""
+
+  zone_star_guardian_secondary_alloys_delta: "Delta Metallurgy Center"
+  zone_star_guardian_secondary_alloys_delta_desc: ""
+
+  zone_star_guardian_secondary_fortress_delta: "Delta Fortress Center"
+  zone_star_guardian_secondary_fortress_delta_desc: "As new age comes, we will need to replace our old guards on Star Guardian with superior elites who are equiped with finest we can supply in delta age."
+
+  zone_star_guardian_secondary_order_delta: "Delta Order Center"
+  zone_star_guardian_secondary_order_delta_desc: "As we arrived at this new age, we must understand that our defense is hard to be break from outside, so we must ensure we also strengthen our defense towards inside."
+
+  zone_star_guardian_core_fortress_alpha: "Alpha Fortress Center"
+  zone_star_guardian_core_fortress_alpha_desc: ""
+
+  zone_star_guardian_core_order_alpha: "Alpha Order Center"
+  zone_star_guardian_core_order_alpha_desc: ""
+
+  zone_star_guardian_secondary_energy_alpha: "Alpha Energy Center"
+  zone_star_guardian_secondary_energy_alpha_desc: ""
+
+  zone_star_guardian_secondary_alloys_alpha: "Alpha Metallurgy Center"
+  zone_star_guardian_secondary_alloys_alpha_desc: ""
+
+  zone_star_guardian_secondary_fortress_alpha: "Alpha Fortress Center"
+  zone_star_guardian_secondary_fortress_alpha_desc: ""
+
+  zone_star_guardian_secondary_order_alpha: "Alpha Order Center"
+  zone_star_guardian_secondary_order_alpha_desc: ""
