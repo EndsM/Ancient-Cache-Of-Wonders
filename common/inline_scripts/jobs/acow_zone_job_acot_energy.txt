@@ -1,0 +1,19 @@
+triggered_district_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	job_acot_energyman_add = $AMOUNT$
+}
+
+triggered_district_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	job_acot_energydrone_add = $AMOUNT$
+}

@@ -117,7 +117,7 @@ zone_star_guardian_secondary_energy_delta = {
 		zone_star_guardian_secondary
 	}
 	inline_script = {
-		script = jobs/AOW_zone_job_energy
+		script = jobs/acow_zone_job_acot_energy
 		AMOUNT = 1000
 	}
 	swap_type = AOW_district_star_guardian_energy
@@ -160,7 +160,7 @@ zone_star_guardian_secondary_alloys_delta = {
 		zone_star_guardian_secondary
 	}
 	inline_script = {
-		script = jobs/AOW_zone_job_alloy
+		script = jobs/acow_zone_job_acot_alloy
 		AMOUNT = 1000
 	}
 	swap_type = AOW_district_star_guardian_alloys
@@ -203,7 +203,7 @@ zone_star_guardian_secondary_fortress_delta = {
 		zone_star_guardian_secondary
 	}
 	inline_script = {
-		script = jobs/AOW_zone_job_soldier
+		script = jobs/acow_zone_job_acot_soldier
 		AMOUNT = 1000
 	}
 	swap_type = AOW_district_star_guardian_fortress
@@ -246,7 +246,7 @@ zone_star_guardian_secondary_order_delta = {
 		zone_star_guardian_secondary
 	}
 	inline_script = {
-		script = jobs/AOW_zone_job_enforcer
+		script = jobs/acow_zone_job_acot_enforcer
 		AMOUNT = 1000
 	}
 	swap_type = AOW_district_star_guardian_order
