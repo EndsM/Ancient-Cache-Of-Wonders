@@ -9,10 +9,7 @@ guiTypes = {
 		buttonType = {
 			name = option_button
 			quadTextureSprite = GFX_event_button_452
-			position = {
-				x = 0
-				y = 0
-			}
+			position = { x = 0 y = 0 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
 		}
@@ -28,10 +25,7 @@ guiTypes = {
 		orientation = CENTER
 		origo = CENTER
 		moveable = yes
-		size = {
-			x = @width1
-			y = 620
-		}
+		size = { x = @width1 y = 620 }
 
 		background = {
 			name = background
@@ -41,21 +35,15 @@ guiTypes = {
 		iconType = {
 			name = empire_header_line
 			quadTextureSprite = GFX_line_center
-			position = {
-				x = -256
-				y = 30
-			}
+			position = { x = -256 y = 30 }
 			orientation = CENTER_UP
 			alwaysTransparent = yes
 		}
 
 		instantTextboxType = {
 			name = acow_title
-			font= malgun_goth_24
-			position = {
-				x = 0
-				y = 10
-			}
+			font = malgun_goth_24
+			position = { x = 0 y = 10 }
 			maxWidth = @width1
 			maxHeight = 30
 			alwaysTransparent = yes
@@ -68,10 +56,7 @@ guiTypes = {
 		buttonType = {
 			name = close
 			quadTextureSprite = GFX_main_close_button
-			position = {
-				x = -44
-				y = 6
-			}
+			position = { x = -44 y = 6 }
 			orientation = UPPER_RIGHT
 			shortcut = "ESCAPE"
 			clicksound = back_click
@@ -82,8 +67,6 @@ guiTypes = {
 		@container_x1 = 10
 		@container_x2 = 220
 		@container_x3 = 430
-		@container_y_base = 50
-		@row_spacing = 83
 
 		containerWindowType = {
 			name = container
@@ -97,7 +80,6 @@ guiTypes = {
 
 			verticalScrollbar = right_vertical_slider
 
-			# --- Point Display Area ---
 			effectButtonType = {
 				name = points_info
 				position = { x = 0 y = 5 }
@@ -109,32 +91,18 @@ guiTypes = {
 				alwaysTransparent = yes
 			}
 
-			# --- JOB GRID ---
-
-			# ROW 1: DARK ENERGY | DARK MATTER | ENERGY
+			# Row 1
 			@y1 = 50
 			containerWindowType = {
 				name = acot_dark_energy
 				size = { width = @container_w height = @container_h }
 				position = { x = @container_x1 y = @y1 }
-				background = {
-					name = bg
-					spriteType = GFX_tiles_dark_area_cut_8
-				}
-				effectButtonType = {
-					name = title
-					position = { x = 0 y = 0 }
-					effect = acow_btn_sw_dummy
-					size = { x = 200 y = 27 }
-					buttonFont = "cg_16b"
-					text = acow_var_sw_points_acot_dark_energy_title
-					format = center
-				}
+				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
+				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_dark_energy_title format = center }
 				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_dark_energy }
 				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_dark_energy]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_dark_energy }
 			}
-
 			containerWindowType = {
 				name = acot_dark_matter
 				size = { width = @container_w height = @container_h }
@@ -145,7 +113,6 @@ guiTypes = {
 				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_dark_matter]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_dark_matter }
 			}
-
 			containerWindowType = {
 				name = acot_energy
 				size = { width = @container_w height = @container_h }
@@ -157,7 +124,7 @@ guiTypes = {
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_energy }
 			}
 
-			# ROW 2: MINERAL | FOOD | TRANSMUTE
+			# Row 2
 			@y2 = 133
 			containerWindowType = {
 				name = acot_mineral
@@ -169,7 +136,6 @@ guiTypes = {
 				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_mineral]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_mineral }
 			}
-
 			containerWindowType = {
 				name = acot_food
 				size = { width = @container_w height = @container_h }
@@ -180,7 +146,6 @@ guiTypes = {
 				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_food]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_food }
 			}
-
 			containerWindowType = {
 				name = acot_transmute
 				size = { width = @container_w height = @container_h }
@@ -192,7 +157,7 @@ guiTypes = {
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_transmute }
 			}
 
-			# ROW 3: ALLOY | ARTISAN
+			# Row 3
 			@y3 = 216
 			containerWindowType = {
 				name = acot_alloy
@@ -204,7 +169,6 @@ guiTypes = {
 				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_alloy]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_alloy }
 			}
-
 			containerWindowType = {
 				name = acot_artisan
 				size = { width = @container_w height = @container_h }
@@ -217,13 +181,26 @@ guiTypes = {
 			}
 		}
 
-		# --- Standard Event Integration (REQUIRED FOR SCRIPT) ---
+		# --- Standard Event Integration ---
 		containerWindowType = {
 			name = EVENT_DIPLO
 			position = { x = 0 y = -40 }
 			size = { width = @width2 height = 32 }
 			orientation = center_down
 			origo = center_down
+
+			instantTextBoxType = {
+				name = action_title
+				font = malgun_goth_24
+				position = { x = 9999 y = 9999 }
+				maxWidth = 1
+			}
+			instantTextBoxType = {
+				name = action_desc
+				font = malgun_goth_24
+				position = { x = 9999 y = 9999 }
+				maxWidth = 1
+			}
 
 			listboxType = {
 				name = option_list
@@ -235,11 +212,50 @@ guiTypes = {
 			}
 		}
 
-		# Hidden Paradox Elements
-		instantTextBoxType = { name = "alien_message" font = "cg_16b" position = { x = 9999 y = 9999 } maxWidth = 1 maxHeight = 1 }
-		buttonType = { name = "focus_button" position = { x = 9999 y = 9999 } spriteType = GFX_fleetview_focus }
-		containerWindowType = { name = portrait position = { x = 9999 y = 9999 } }
+		# --- Hidden Paradox Elements (Required to prevent crashes) ---
+		buttonType = { name = tts_button position = { x = 9999 y = 9999 } spriteType = GFX_button_tts_start }
+		instantTextBoxType = { name = heading font = malgun_goth_24 position = { x = 9999 y = 9999 } maxWidth = 1 }
+		instantTextBoxType = { name = alien_message font = cg_16b position = { x = 9999 y = 9999 } maxWidth = 1 }
+		instantTextBoxType = { name = empire_name font = cg_16b position = { x = 9999 y = 9999 } maxWidth = 1 }
+		instantTextBoxType = { name = empire_government_type font = cg_16b position = { x = 9999 y = 9999 } maxWidth = 1 }
+		instantTextBoxType = { name = empire_personality_type font = cg_16b position = { x = 9999 y = 9999 } maxWidth = 1 }
+		buttonType = { name = focus_button position = { x = 9999 y = 9999 } spriteType = GFX_fleetview_focus }
+		buttonType = { name = empire_flag position = { x = 9999 y = 9999 } spriteType = GFX_empire_flag_128 }
+		buttonType = { name = confirm_button quadTextureSprite = GFX_standard_button_142_34_button position = { x = 9999 y = 9999 } font = "cg_16b" text = "MESSAGE_OK" }
+		
+		containerWindowType = {
+			name = portrait_background
+			position = { x = 9999 y = 9999 }
+			iconType = { name = event_picture spriteType = GFX_diplomacy_portrait_frame }
+			iconType = { name = portrait spriteType = GFX_portrait_character }
+		}
+		
+		containerWindowType = {
+			name = portrait
+			position = { x = 9999 y = 9999 }
+			iconType = { name = portrait spriteType = GFX_portrait_character }
+		}
+		
 		iconType = { name = empire_info_bg spriteType = GFX_diplomacy_dark_fade_bg position = { x = 9999 y = 9999 } }
-
+		
+		# Leader details container (Required)
+		containerWindowType = {
+			name = leader_details
+			position = { x = 9999 y = 9999 }
+			containerWindowType = { name = empire_traits_box position = { x = 0 y = 0 } size = { width = 1 height = 1 } }
+			instantTextBoxType = { name = empire_traits_label font = cg_16b position = { x = 0 y = 0 } maxWidth = 1 }
+			overlappingElementsBoxType = { name = leader_traits position = { x = 0 y = 0 } size = { x = 1 y = 1 } }
+			instantTextBoxType = { name = leader_name font = cg_16b position = { x = 0 y = 0 } maxWidth = 1 }
+			instantTextBoxType = { name = leader_species font = cg_16b position = { x = 0 y = 0 } maxWidth = 1 }
+		}
+		
+		# Opinion Window container (Required)
+		containerWindowType = {
+			name = opinion_window
+			position = { x = 9999 y = 9999 }
+			size = { width = 94 height = 30 }
+			iconType = { name = their_opinion_icon spriteType = GFX_diplomacy_opinion }
+			instantTextBoxType = { name = their_opinion font = cg_16b maxWidth = 40 position = { x = 0 y = 0 } }
+		}
 	}
 }
