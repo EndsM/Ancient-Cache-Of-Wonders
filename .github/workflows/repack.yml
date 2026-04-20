@@ -3,30 +3,46 @@ name: Repack Mod for Release
 on:
   # Allows you to trigger this workflow manually from the Actions tab
   workflow_dispatch:
-  # Triggers whenever you push to main/master
   push:
     branches:
       - master
 
+concurrency:
+  # Cancels in-progress runs if push multiple times in a row quickly
+  group: ${{github.workflow}}-${{github.ref}}
+  cancel-in-progress: true
+
 jobs:
   build-repack:
+    # Need write permissions to manage tags and releases
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+
+      - name: Delete older AutoBuild release and tag
+        # Delete the old tag before creating the new one
+        uses: dev-drprasad/delete-tag-and-release@v1.1
+        with:
+          delete_release: true
+          tag_name: AutoBuild
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Extract Mod Name from descriptor.mod
         id: extract_name
         run: |
           # Regex matches 'name = "ModName"' and extracts 'ModName'
           MOD_NAME=$(grep -oP 'name\s*=\s*"\K[^"]+' descriptor.mod | head -n 1)
-          
+
           # Fallback to repo name if descriptor.mod parse fails
           if [ -z "$MOD_NAME" ]; then
             MOD_NAME="${{ github.event.repository.name }}"
           fi
-          
+
           echo "Parsed Mod Name: $MOD_NAME"
           echo "MOD_NAME=$MOD_NAME" >> $GITHUB_ENV
 
@@ -34,47 +50,48 @@ jobs:
         run: |
           # 1. Create the repack output directories
           mkdir -p "repack/$MOD_NAME"
-          
+
           # 2. Copy all files/folders to the subfolder, excluding the repack folder itself
           rsync -arv --exclude='repack' ./ "repack/$MOD_NAME/"
-          
+
           # 3. Copy descriptor.mod to the base of the repack directory
           cp descriptor.mod "repack/$MOD_NAME.mod"
 
       - name: Remove Development Files and Folders
         run: |
           cd "repack/$MOD_NAME"
-          
+
           # Delete development folders
-          rm -rf .git .vscode 
-          rm -rf .github  # Also remove the workflow YAML files themselves from the release
-          
+          rm -rf .git .vscode .github
+
           # Delete development files by extension
           find . -type f \( -name "*.exe" -o -name "*.py" -o -name ".gitignore" -o -name ".gitattributes" -o -name "*.kra" \) -delete
 
       - name: Upload Repack as GitHub Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ env.MOD_NAME }}-repack
           path: repack/
           compression-level: 9
 
-      # --- OPTIONAL: Automate GitHub Releases ---
-      # If you push a tag (e.g. `git tag v1.0` -> `git push origin v1.0`), 
-      # this will ZIP the files and create a GitHub Release automatically.
-      
       - name: Create ZIP Archive for Release
-        if: startsWith(github.ref, 'refs/tags/v')
         run: |
           cd repack
           # Zips both the folder and the .mod file together
           zip -r "${{ env.MOD_NAME }}.zip" ./*
 
-      - name: Publish GitHub Release
-        if: startsWith(github.ref, 'refs/tags/v')
+      - name: Publish Pre-Release (AutoBuild)
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: AutoBuild
+          name: "AutoBuild"
+          body: |
+            ## Continuous AutoBuild
+            **Commit:** `${{ github.sha }}`
+
+            This pre-release is automatically generated on every push to the `master` branch. It contains the latest repacked code.
+          draft: false
+          prerelease: true
           files: repack/${{ env.MOD_NAME }}.zip
-          generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
