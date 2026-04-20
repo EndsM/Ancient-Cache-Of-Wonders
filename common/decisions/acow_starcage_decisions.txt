@@ -1,0 +1,41 @@
+acow_decision_starcage_world = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		uses_district_set = AOW_district_starcage_world
+	}
+	allow = {
+		exists = owner
+		owner = {
+			NOT = {
+				# Add event block later
+			}
+		}
+	}
+	effect = {
+		# To avoid strange things, ensure the maxium exist first
+		acow_init_if_not = {
+			key = AOW_var_sw_points
+			value = @AOW_var_max_sw_points
+		}
+		# SR jobs
+		acow_init_if_not = {
+			# Unified var for man and drone
+			key = acow_var_sw_points_acot_dark_energy
+			value = 0
+		}
+		acow_init_if_not = {
+			key = acow_var_sw_points_acot_dark_matter
+			value = 0
+		}
+		# Resources jobs
+		acow_init_if_not = {
+			key = acow_var_sw_points_acot_energy
+			value = 0
+		}
+		acow_init_if_not = {
+			key = acow_var_sw_points_acot_mineral
+			value = 0
+		}
+	}
+}

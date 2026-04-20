@@ -2,12 +2,12 @@ acow_init_if_not = {
 	if = {
 		limit = {
 			NOT = {
-				is_variable_set = $KEY$
+				is_variable_set = $key$
 			}
 		}
 		set_variable = {
-			which = $KEY$
-			value = $V$
+			which = $key$
+			value = $value$
 		}
 	}
 }
