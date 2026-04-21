@@ -69,6 +69,29 @@ triggered_district_planet_modifier = {
 	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_dark_matter|
 }
 
+# Researcher
+triggered_district_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	job_acot_researcher_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_researcher|
+}
+
+triggered_district_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	job_acot_researcher_drone_add = $number$
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_points_acot_researcher|
+}
+
 # energy
 triggered_district_planet_modifier = {
 	potential = {

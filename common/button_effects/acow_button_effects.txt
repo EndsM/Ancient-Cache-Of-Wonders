@@ -34,6 +34,10 @@ acow_btn_sw_reset_all = {
 				value = 0
 			}
 			set_variable = {
+				which = acow_var_sw_points_acot_researcher
+				value = 0
+			}
+			set_variable = {
 				which = acow_var_sw_points_acot_energy
 				value = 0
 			}
@@ -141,6 +145,45 @@ acow_btn_sw_decr_dark_matter = {
 		inline_script = {
 			script = megastructures/starcage_world/acow_decrease_sw_points
 			var = acow_var_sw_points_acot_dark_matter
+		}
+	}
+}
+
+# --- Researcher ---
+acow_btn_sw_incr_researcher = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_increase_sw_points
+			var = acow_var_sw_points_acot_researcher
+		}
+	}
+}
+
+acow_btn_sw_decr_researcher = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_decrease_sw_points
+			var = acow_var_sw_points_acot_researcher
 		}
 	}
 }
