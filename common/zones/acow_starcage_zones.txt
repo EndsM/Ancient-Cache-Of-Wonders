@@ -112,6 +112,14 @@ zone_starcage_world_base_delta = {
 		}
 	}
 	included_building_sets = {
+		generator
+		mining
+		farming
+		hydroponics
+		fallen_empire_generator
+		fallen_empire_mining
+		fallen_empire_farming
+		automation
 	}
 	zone_sets = {
 		zone_starcage_world
@@ -122,5 +130,44 @@ zone_starcage_world_base_delta = {
 	inline_script = {
 		script = zones/acow_starcage_world_zone_jobs
 		number = 100
+	}
+	district_planet_modifier = {
+		technician_jobs_bonus_workforce_mult = 0.2
+		miner_jobs_bonus_workforce_mult = 0.2
+		farmer_jobs_bonus_workforce_mult = 0.2
+		pop_acot_workerman_bonus_workforce_mult = 0.1
+		pop_acot_workerdrone_bonus_workforce_mult = 0.1
+	}
+}
+
+zone_starcage_world_energy_delta = {
+	icon = GFX_district_specialization_energy
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		generator
+		fallen_empire_generator
+		automation
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_energy
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		technician_jobs_bonus_workforce_mult = 0.4
+		pop_acot_workerman_bonus_workforce_mult = 0.1
+		pop_acot_workerdrone_bonus_workforce_mult = 0.1
 	}
 }
