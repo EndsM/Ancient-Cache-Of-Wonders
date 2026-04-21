@@ -11,6 +11,7 @@ acow_btn_sw_dummy = {
 	}
 }
 
+# Resources Operations
 # --- Dark Energy ---
 acow_btn_sw_incr_dark_energy = {
 	potential = {
@@ -49,4 +50,276 @@ acow_btn_sw_decr_dark_energy = {
 		}
 	}
 }
+
 # --- Dark Matter ---
+acow_btn_sw_incr_dark_matter = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_increase_sw_points
+			var = acow_var_sw_points_acot_dark_matter
+		}
+	}
+}
+
+acow_btn_sw_decr_dark_matter = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_decrease_sw_points
+			var = acow_var_sw_points_acot_dark_matter
+		}
+	}
+}
+
+# --- Energy ---
+acow_btn_sw_incr_energy = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_increase_sw_points
+			var = acow_var_sw_points_acot_energy
+		}
+	}
+}
+
+acow_btn_sw_decr_energy = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_decrease_sw_points
+			var = acow_var_sw_points_acot_energy
+		}
+	}
+}
+
+# --- Mineral ---
+acow_btn_sw_incr_mineral = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_increase_sw_points
+			var = acow_var_sw_points_acot_mineral
+		}
+	}
+}
+
+acow_btn_sw_decr_mineral = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_decrease_sw_points
+			var = acow_var_sw_points_acot_mineral
+		}
+	}
+}
+
+# --- Food ---
+acow_btn_sw_incr_food = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_increase_sw_points
+			var = acow_var_sw_points_acot_food
+		}
+	}
+}
+
+acow_btn_sw_decr_food = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_decrease_sw_points
+			var = acow_var_sw_points_acot_food
+		}
+	}
+}
+
+# --- Transmute ---
+acow_btn_sw_incr_transmute = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_increase_sw_points
+			var = acow_var_sw_points_acot_transmute
+		}
+	}
+}
+
+acow_btn_sw_decr_transmute = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_decrease_sw_points
+			var = acow_var_sw_points_acot_transmute
+		}
+	}
+}
+
+# --- Alloy ---
+acow_btn_sw_incr_alloy = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_increase_sw_points
+			var = acow_var_sw_points_acot_alloy
+		}
+	}
+}
+
+acow_btn_sw_decr_alloy = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_decrease_sw_points
+			var = acow_var_sw_points_acot_alloy
+		}
+	}
+}
+
+# --- Artisan ---
+acow_btn_sw_incr_artisan = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_increase_sw_points
+			var = acow_var_sw_points_acot_artisan
+		}
+	}
+}
+
+acow_btn_sw_decr_artisan = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		inline_script = {
+			script = megastructures/starcage_world/acow_decrease_sw_points
+			var = acow_var_sw_points_acot_artisan
+		}
+	}
+}
