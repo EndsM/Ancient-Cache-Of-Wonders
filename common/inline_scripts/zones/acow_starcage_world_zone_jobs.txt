@@ -9,7 +9,7 @@ triggered_district_planet_modifier = {
 	}
 	# Unlink AOW, we can step base value based on district core/secondary and level
 	job_acot_enforcer_add = $number$
-	mult = value:AOW_var_starcage_world_points|v|AOW_var_sw_points|
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_max_points|
 }
 
 triggered_district_planet_modifier = {
@@ -20,7 +20,7 @@ triggered_district_planet_modifier = {
 		}
 	}
 	job_acot_enforcer_drone_add = $number$
-	mult = value:AOW_var_starcage_world_points|v|AOW_var_sw_points|
+	mult = value:AOW_var_starcage_world_points|v|acow_var_sw_max_points|
 }
 
 # dark energy

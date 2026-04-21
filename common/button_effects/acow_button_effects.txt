@@ -11,6 +11,19 @@ acow_btn_sw_dummy = {
 	}
 }
 
+acow_btn_sw_reset_all = {
+	potential = {
+		from = {
+			has_active_event = {
+				acow_starcage_world_events.1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
 # Resources Operations
 # --- Dark Energy ---
 acow_btn_sw_incr_dark_energy = {
