@@ -3,6 +3,8 @@ acow_decision_starcage_world = {
 	enactment_time = 0
 	potential = {
 		uses_district_set = AOW_district_starcage_world
+		# Active the features only after build acot capitals
+		has_enigmatic_capital = yes
 	}
 	allow = {
 		exists = owner
