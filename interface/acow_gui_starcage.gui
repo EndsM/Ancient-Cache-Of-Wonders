@@ -4,7 +4,7 @@ guiTypes = {
 	containerWindowType = {
 		name = acow_starcage_world_option
 		position = { x = 0 y = 0 }
-		size = { x = 280 y = 40 }
+		size = { width = 280 height = 40 }
 		moveable = no
 		buttonType = {
 			name = option_button
@@ -25,7 +25,7 @@ guiTypes = {
 		orientation = CENTER
 		origo = CENTER
 		moveable = yes
-		size = { x = @width1 y = 620 }
+		size = { width = @width1 height = 620 }
 
 		background = {
 			name = background
@@ -205,7 +205,7 @@ guiTypes = {
 			listboxType = {
 				name = option_list
 				position = { x = 180 y = 0 }
-				size = { width = 280 height = 40 }
+				size = { x = 280 y = 40 }
 				spacing = 1
 				scrollbartype = standardlistbox_slider
 				borderSize = { x = 0 y = 0 }
