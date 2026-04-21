@@ -1,0 +1,18 @@
+from = {
+	if = {
+		limit = {
+			check_variable = {
+				which = AOW_var_sw_points
+				value > 0
+			}
+		}
+		change_variable = {
+			which = $var$
+			value = 1
+		}
+		change_variable = {
+			which = AOW_var_sw_points
+			value = -1
+		}
+	}
+}
