@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_acot_zone_dm_unity"
+		texturefile = "gfx/interface/icons/districts/district_specialization_icons/acot_zone_dm_unity.dds"
+	}
+}

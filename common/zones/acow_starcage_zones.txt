@@ -17,7 +17,7 @@ zone_starcage_world_core_jobs_delta = {
 		# Fallback to these zones if the potential is not met
 		zone_starcage_world_core_jobs
 	}
-	icon = GFX_district_specialization_industrial
+	icon = GFX_acot_zone_dm_industry
 	base_buildtime = @buildtime
 	resources = {
 		category = planet_zones
@@ -45,7 +45,7 @@ zone_starcage_world_core_jobs_delta = {
 }
 
 zone_starcage_world_core_buildings_delta = {
-	icon = GFX_district_specialization_urban
+	icon = GFX_acot_zone_dm_urban
 	base_buildtime = @buildtime
 	resources = {
 		category = planet_zones
@@ -73,7 +73,7 @@ zone_starcage_world_core_buildings_delta = {
 }
 
 zone_starcage_world_core_amenities_delta = {
-	icon = GFX_district_specialization_unity
+	icon = GFX_acot_zone_dm_unity
 	base_buildtime = @buildtime
 	resources = {
 		category = planet_zones
@@ -100,9 +100,9 @@ zone_starcage_world_core_amenities_delta = {
 	}
 }
 
-# Secondary
+# Secondary -- We are going to strip down some of originals
 zone_starcage_world_base_delta = {
-	icon = GFX_district_specialization_hydroponics
+	icon = GFX_acot_zone_dm_pylon
 	base_buildtime = @buildtime
 	resources = {
 		category = planet_zones
@@ -141,7 +141,7 @@ zone_starcage_world_base_delta = {
 }
 
 zone_starcage_world_energy_delta = {
-	icon = GFX_district_specialization_energy
+	icon = GFX_acot_zone_dm_energy
 	base_buildtime = @buildtime
 	resources = {
 		category = planet_zones
@@ -173,7 +173,7 @@ zone_starcage_world_energy_delta = {
 }
 
 zone_starcage_world_minerals_delta = {
-	icon = GFX_district_specialization_minerals
+	icon = GFX_acot_zone_dm_mineral
 	base_buildtime = @buildtime
 	resources = {
 		category = planet_zones
@@ -205,7 +205,7 @@ zone_starcage_world_minerals_delta = {
 }
 
 zone_starcage_world_food_delta = {
-	icon = GFX_district_specialization_food
+	icon = GFX_acot_zone_dm_food
 	base_buildtime = @buildtime
 	resources = {
 		category = planet_zones
