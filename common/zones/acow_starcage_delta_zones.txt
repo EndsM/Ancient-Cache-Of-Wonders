@@ -10,6 +10,8 @@ zone_starcage_world_core_jobs_delta = {
 		exists = owner
 		owner = {
 		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
 	}
 	unlock = {
 	}
@@ -45,6 +47,18 @@ zone_starcage_world_core_jobs_delta = {
 }
 
 zone_starcage_world_core_buildings_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_core_buildings
+	}
 	icon = GFX_acot_zone_dm_urban
 	base_buildtime = @buildtime
 	resources = {
@@ -73,6 +87,18 @@ zone_starcage_world_core_buildings_delta = {
 }
 
 zone_starcage_world_core_amenities_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_core_amenities
+	}
 	icon = GFX_acot_zone_dm_unity
 	base_buildtime = @buildtime
 	resources = {
@@ -102,6 +128,18 @@ zone_starcage_world_core_amenities_delta = {
 
 # Secondary -- We are going to strip down some of originals
 zone_starcage_world_base_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_base
+	}
 	icon = GFX_acot_zone_dm_pylon
 	base_buildtime = @buildtime
 	resources = {
@@ -141,6 +179,18 @@ zone_starcage_world_base_delta = {
 }
 
 zone_starcage_world_energy_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_energy
+	}
 	icon = GFX_acot_zone_dm_energy
 	base_buildtime = @buildtime
 	resources = {
@@ -173,6 +223,18 @@ zone_starcage_world_energy_delta = {
 }
 
 zone_starcage_world_minerals_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_minerals
+	}
 	icon = GFX_acot_zone_dm_mineral
 	base_buildtime = @buildtime
 	resources = {
@@ -205,6 +267,18 @@ zone_starcage_world_minerals_delta = {
 }
 
 zone_starcage_world_food_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_food
+	}
 	icon = GFX_acot_zone_dm_food
 	base_buildtime = @buildtime
 	resources = {
@@ -238,6 +312,18 @@ zone_starcage_world_food_delta = {
 }
 
 zone_starcage_world_industrial_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_industrial
+	}
 	icon = GFX_acot_zone_dm_industry
 	base_buildtime = @zone_buildtime
 	resources = {
@@ -288,6 +374,18 @@ zone_starcage_world_industrial_delta = {
 }
 
 zone_starcage_world_unity_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_unity
+	}
 	icon = GFX_acot_zone_dm_unity
 	base_buildtime = @zone_buildtime
 	resources = {
@@ -318,6 +416,18 @@ zone_starcage_world_unity_delta = {
 }
 
 zone_starcage_world_research_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_research
+	}
 	icon = GFX_acot_zone_dm_research
 	base_buildtime = @buildtime
 	resources = {
@@ -348,6 +458,18 @@ zone_starcage_world_research_delta = {
 }
 
 zone_starcage_world_trade_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_trade
+	}
 	icon = GFX_district_specialization_trade
 	base_buildtime = @buildtime
 	resources = {
@@ -379,6 +501,18 @@ zone_starcage_world_trade_delta = {
 }
 
 zone_starcage_world_fortress_delta = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_enigmatic_capital = yes
+		has_ascended_capital = no
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_fortress
+	}
 	icon = GFX_district_specialization_fortress
 	base_buildtime = @buildtime
 	resources = {
