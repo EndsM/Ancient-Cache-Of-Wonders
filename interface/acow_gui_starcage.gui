@@ -216,6 +216,7 @@ guiTypes = {
 		buttonType = { name = tts_button position = { x = 9999 y = 9999 } spriteType = GFX_button_tts_start }
 		instantTextBoxType = { name = heading font = malgun_goth_24 position = { x = 9999 y = 9999 } maxWidth = 1 }
 		instantTextBoxType = { name = alien_message font = cg_16b position = { x = 9999 y = 9999 } maxWidth = 1 }
+		containerWindowType = { name = alien_message_background position = { x = 9999 y = 9999 } size = { width = 1 height = 1 } }
 		instantTextBoxType = { name = empire_name font = cg_16b position = { x = 9999 y = 9999 } maxWidth = 1 }
 		instantTextBoxType = { name = empire_government_type font = cg_16b position = { x = 9999 y = 9999 } maxWidth = 1 }
 		instantTextBoxType = { name = empire_personality_type font = cg_16b position = { x = 9999 y = 9999 } maxWidth = 1 }
@@ -226,6 +227,7 @@ guiTypes = {
 		containerWindowType = {
 			name = portrait_background
 			position = { x = 9999 y = 9999 }
+			size = { width = 1 height = 1 }
 			iconType = { name = event_picture spriteType = GFX_diplomacy_portrait_frame }
 			iconType = { name = portrait spriteType = GFX_portrait_character }
 		}
@@ -233,6 +235,7 @@ guiTypes = {
 		containerWindowType = {
 			name = portrait
 			position = { x = 9999 y = 9999 }
+			size = { width = 1 height = 1 }
 			iconType = { name = portrait spriteType = GFX_portrait_character }
 		}
 		
@@ -247,6 +250,7 @@ guiTypes = {
 			overlappingElementsBoxType = { name = leader_traits position = { x = 0 y = 0 } size = { x = 1 y = 1 } }
 			instantTextBoxType = { name = leader_name font = cg_16b position = { x = 0 y = 0 } maxWidth = 1 }
 			instantTextBoxType = { name = leader_species font = cg_16b position = { x = 0 y = 0 } maxWidth = 1 }
+			instantTextBoxType = { name = leader_title font = cg_16b position = { x = 0 y = 0 } maxWidth = 1 }
 		}
 		
 		# Opinion Window container (Required)
