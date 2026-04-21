@@ -18,3 +18,5 @@
  acow_ui_val_alloy: "§G[This.acow_var_sw_points_acot_alloy]§!"
  acow_ui_val_artisan: "§G[This.acow_var_sw_points_acot_artisan]§!"
  acow_ui_reset_all: "§R重置所有ACOT工作§!"
+ acow_ui_val_researcher: "§G[This.acow_var_sw_points_acot_researcher]§!"
+ acow_var_sw_points_acot_researcher_title: "ACOT Researchers"
