@@ -22,6 +22,48 @@ acow_btn_sw_reset_all = {
 	allow = {
 		always = yes
 	}
+	effect = {
+		hidden_effect = {
+			# Reset all ACOT specific job variables to 0
+			set_variable = {
+				which = acow_var_sw_points_acot_dark_energy
+				value = 0
+			}
+			set_variable = {
+				which = acow_var_sw_points_acot_dark_matter
+				value = 0
+			}
+			set_variable = {
+				which = acow_var_sw_points_acot_energy
+				value = 0
+			}
+			set_variable = {
+				which = acow_var_sw_points_acot_mineral
+				value = 0
+			}
+			set_variable = {
+				which = acow_var_sw_points_acot_food
+				value = 0
+			}
+			set_variable = {
+				which = acow_var_sw_points_acot_transmute
+				value = 0
+			}
+			set_variable = {
+				which = acow_var_sw_points_acot_alloy
+				value = 0
+			}
+			set_variable = {
+				which = acow_var_sw_points_acot_artisan
+				value = 0
+			}
+			# Restore the ACOW unallocated pool to max
+			set_variable = {
+				which = acow_var_sw_max_points
+				value = @acow_var_max_sw_points_base
+			}
+		}
+	}
 }
 
 # Resources Operations

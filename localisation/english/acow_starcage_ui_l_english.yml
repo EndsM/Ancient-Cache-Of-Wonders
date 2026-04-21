@@ -1,6 +1,7 @@
 ﻿l_english:
   acow_starcage_management_title: "Starcage World Job Management"
   acow_ui_remaining_points: "Remaining Points: §G[This.acow_var_sw_max_points]§!"
+  acow_ui_reset_all: "§RReset All ACOT Jobs§!"
 
   acow_ui_val_dark_energy: "§G[This.acow_var_sw_points_acot_dark_energy]§!"
   acow_ui_val_dark_matter: "§G[This.acow_var_sw_points_acot_dark_matter]§!"

@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
  acow_starcage_management_title: "Starcage World Job Management"
- acow_ui_remaining_points: "Remaining Points: §G[This.AOW_var_sw_points]§!"
+ acow_ui_remaining_points: "剩余点数：§G[This.acow_var_sw_max_points]§!"
  acow_var_sw_points_acot_dark_energy_title: "Dark Energy"
  acow_var_sw_points_acot_dark_matter_title: "Dark Matter"
  acow_var_sw_points_acot_energy_title: "Energy"
@@ -17,3 +17,4 @@
  acow_ui_val_transmute: "§G[This.acow_var_sw_points_acot_transmute]§!"
  acow_ui_val_alloy: "§G[This.acow_var_sw_points_acot_alloy]§!"
  acow_ui_val_artisan: "§G[This.acow_var_sw_points_acot_artisan]§!"
+ acow_ui_reset_all: "§R重置所有ACOT工作§!"

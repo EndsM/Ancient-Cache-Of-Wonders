@@ -91,6 +91,17 @@ guiTypes = {
 				alwaysTransparent = yes
 			}
 
+			# Reset Button
+			effectButtonType = {
+				name = acow_reset_button
+				position = { x = 220 y = 300 } # Centered in row 4, change it later
+				size = { x = 200 y = 40 }
+				quadTextureSprite = GFX_standard_button_200_34_button
+				text = acow_ui_reset_all
+				buttonFont = "cg_16b"
+				effect = acow_btn_sw_reset_all
+			}
+
 			# Row 1
 			@y1 = 50
 			containerWindowType = {
