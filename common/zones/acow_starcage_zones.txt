@@ -286,3 +286,125 @@ zone_starcage_world_industrial_delta = {
 		pop_acot_specialdrone_bonus_workforce_mult = 0.1
 	}
 }
+
+zone_starcage_world_unity_delta = {
+	icon = GFX_acot_zone_dm_unity
+	base_buildtime = @zone_buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		unity
+		automation
+		origin
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_unity
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		bureaucrat_jobs_bonus_workforce_mult = 0.3
+	}
+}
+
+zone_starcage_world_research_delta = {
+	icon = GFX_acot_zone_dm_research
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		research
+		automation
+		origin
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_research
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		researcher_jobs_bonus_workforce_mult = 0.2
+	}
+}
+
+zone_starcage_world_trade_delta = {
+	icon = GFX_district_specialization_trade
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		urban
+		trade
+		automation
+		origin
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_trade
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		trader_jobs_bonus_workforce_mult = 0.3
+	}
+}
+
+zone_starcage_world_fortress_delta = {
+	icon = GFX_district_specialization_fortress
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		fortress
+		automation
+		origin
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_fortress
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		pop_soldier_bonus_workforce_mult = 0.3
+		pop_warrior_drone_bonus_workforce_mult = 0.3
+	}
+}
