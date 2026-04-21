@@ -16,6 +16,7 @@ zone_starcage_world_core_jobs_alpha = {
 	}
 	convert_to = {
 		# Fallback to these zones if the potential is not met
+		zone_starcage_world_core_jobs_delta
 		zone_starcage_world_core_jobs
 	}
 	icon = GFX_acot_zone_dm_industry
@@ -55,6 +56,7 @@ zone_starcage_world_core_buildings_alpha = {
 	unlock = {
 	}
 	convert_to = {
+		zone_starcage_world_core_buildings_delta
 		zone_starcage_world_core_buildings
 	}
 	icon = GFX_acot_zone_dm_urban
@@ -94,6 +96,7 @@ zone_starcage_world_core_amenities_alpha = {
 	unlock = {
 	}
 	convert_to = {
+		zone_starcage_world_core_amenities_delta
 		zone_starcage_world_core_amenities
 	}
 	icon = GFX_acot_zone_dm_unity
@@ -134,6 +137,7 @@ zone_starcage_world_base_alpha = {
 	unlock = {
 	}
 	convert_to = {
+		zone_starcage_world_base_delta
 		zone_starcage_world_base
 	}
 	icon = GFX_acot_zone_dm_pylon
@@ -184,6 +188,7 @@ zone_starcage_world_energy_alpha = {
 	unlock = {
 	}
 	convert_to = {
+		zone_starcage_world_energy_delta
 		zone_starcage_world_energy
 	}
 	icon = GFX_acot_zone_dm_energy
@@ -227,6 +232,7 @@ zone_starcage_world_minerals_alpha = {
 	unlock = {
 	}
 	convert_to = {
+		zone_starcage_world_minerals_delta
 		zone_starcage_world_minerals
 	}
 	icon = GFX_acot_zone_dm_mineral
@@ -270,6 +276,7 @@ zone_starcage_world_food_alpha = {
 	unlock = {
 	}
 	convert_to = {
+		zone_starcage_world_food_delta
 		zone_starcage_world_food
 	}
 	icon = GFX_acot_zone_dm_food
@@ -314,6 +321,7 @@ zone_starcage_world_industrial_alpha = {
 	unlock = {
 	}
 	convert_to = {
+		zone_starcage_world_industrial_delta
 		zone_starcage_world_industrial
 	}
 	icon = GFX_acot_zone_dm_industry
@@ -375,6 +383,7 @@ zone_starcage_world_unity_alpha = {
 	unlock = {
 	}
 	convert_to = {
+		zone_starcage_world_unity_delta
 		zone_starcage_world_unity
 	}
 	icon = GFX_acot_zone_dm_unity
@@ -416,6 +425,7 @@ zone_starcage_world_research_alpha = {
 	unlock = {
 	}
 	convert_to = {
+		zone_starcage_world_research_delta
 		zone_starcage_world_research
 	}
 	icon = GFX_acot_zone_dm_research
@@ -457,6 +467,7 @@ zone_starcage_world_trade_alpha = {
 	unlock = {
 	}
 	convert_to = {
+		zone_starcage_world_trade_delta
 		zone_starcage_world_trade
 	}
 	icon = GFX_district_specialization_trade
@@ -499,6 +510,7 @@ zone_starcage_world_fortress_alpha = {
 	unlock = {
 	}
 	convert_to = {
+		zone_starcage_world_fortress_delta
 		zone_starcage_world_fortress
 	}
 	icon = GFX_district_specialization_fortress
