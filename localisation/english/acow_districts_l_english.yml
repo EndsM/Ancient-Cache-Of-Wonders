@@ -35,6 +35,42 @@
   zone_starcage_world_fortress_delta: "Delta Planetary Defense"
   zone_starcage_world_fortress_delta_desc: ""
 
+  zone_starcage_world_core_jobs_alpha: "Alpha Production Center"
+  zone_starcage_world_core_jobs_alpha_desc: ""
+
+  zone_starcage_world_core_buildings_alpha: "Alpha Construction Center"
+  zone_starcage_world_core_buildings_alpha_desc: ""
+
+  zone_starcage_world_core_amenities_alpha: "Alpha Unity Center"
+  zone_starcage_world_core_amenities_alpha_desc: ""
+
+  zone_starcage_world_base_alpha: "Alpha Base Resources"
+  zone_starcage_world_base_alpha_desc: ""
+
+  zone_starcage_world_energy_alpha: "Alpha Energy Generation"
+  zone_starcage_world_energy_alpha_desc: ""
+
+  zone_starcage_world_minerals_alpha: "Alpha Mineral Excavation"
+  zone_starcage_world_minerals_alpha_desc: ""
+
+  zone_starcage_world_food_alpha: "Alpha Food Plantation"
+  zone_starcage_world_food_alpha_desc: ""
+
+  zone_starcage_world_industrial_alpha: "Alpha Industrial District"
+  zone_starcage_world_industrial_alpha_desc: ""
+
+  zone_starcage_world_unity_alpha: "Alpha Administration Center"
+  zone_starcage_world_unity_alpha_desc: ""
+
+  zone_starcage_world_research_alpha: "Alpha Research Center"
+  zone_starcage_world_research_alpha_desc: ""
+
+  zone_starcage_world_trade_alpha: "Alpha Trading Nexus"
+  zone_starcage_world_trade_alpha_desc: ""
+
+  zone_starcage_world_fortress_alpha: "Alpha Planetary Defense"
+  zone_starcage_world_fortress_alpha_desc: ""
+
   zone_star_guardian_core_fortress_delta: "Delta Fortress Center"
   zone_star_guardian_core_fortress_delta_desc: "As new age comes, we will need to replace our old guards on Star Guardian with superior elites who are equiped with finest we can supply in delta age."
 
