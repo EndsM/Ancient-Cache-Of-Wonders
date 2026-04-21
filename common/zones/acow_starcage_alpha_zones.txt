@@ -36,9 +36,9 @@ zone_starcage_world_core_jobs_alpha = {
 		zone_starcage_world_core
 	}
 	district_planet_modifier = {
-		pop_bonus_workforce_mult = 0.1
-		planet_building_build_speed_mult = 0.1
-		planet_decision_enact_speed_mult = 0.1
+		pop_bonus_workforce_mult = 0.15
+		planet_building_build_speed_mult = 0.15
+		planet_decision_enact_speed_mult = 0.15
 	}
 	inline_script = {
 		script = zones/acow_starcage_world_zone_jobs
@@ -76,9 +76,9 @@ zone_starcage_world_core_buildings_alpha = {
 		zone_starcage_world_core
 	}
 	district_planet_modifier = {
-		planet_housing_add = 1000
-		planet_buildings_produces_mult = 0.1
-		planet_building_build_speed_mult = 0.15
+		planet_housing_add = 5000
+		planet_buildings_produces_mult = 0.15
+		planet_building_build_speed_mult = 0.2
 	}
 	inline_script = {
 		script = zones/acow_starcage_world_zone_jobs
@@ -116,9 +116,9 @@ zone_starcage_world_core_amenities_alpha = {
 		zone_starcage_world_core
 	}
 	district_planet_modifier = {
-		planet_amenities_add = 1000
-		planet_jobs_unity_produces_mult = 0.15
-		planet_decision_enact_speed_mult = 0.15
+		planet_amenities_add = 5000
+		planet_jobs_unity_produces_mult = 0.2
+		planet_decision_enact_speed_mult = 0.2
 	}
 	inline_script = {
 		script = zones/acow_starcage_world_zone_jobs
@@ -170,11 +170,11 @@ zone_starcage_world_base_alpha = {
 		number = 100
 	}
 	district_planet_modifier = {
-		technician_jobs_bonus_workforce_mult = 0.2
-		miner_jobs_bonus_workforce_mult = 0.2
-		farmer_jobs_bonus_workforce_mult = 0.2
-		pop_acot_workerman_bonus_workforce_mult = 0.1
-		pop_acot_workerdrone_bonus_workforce_mult = 0.1
+		technician_jobs_bonus_workforce_mult = 0.3
+		miner_jobs_bonus_workforce_mult = 0.3
+		farmer_jobs_bonus_workforce_mult = 0.3
+		pop_acot_workerman_bonus_workforce_mult = 0.2
+		pop_acot_workerdrone_bonus_workforce_mult = 0.2
 	}
 }
 
@@ -216,9 +216,9 @@ zone_starcage_world_energy_alpha = {
 		number = 100
 	}
 	district_planet_modifier = {
-		technician_jobs_bonus_workforce_mult = 0.4
-		pop_acot_workerman_bonus_workforce_mult = 0.1
-		pop_acot_workerdrone_bonus_workforce_mult = 0.1
+		technician_jobs_bonus_workforce_mult = 0.5
+		pop_acot_workerman_bonus_workforce_mult = 0.2
+		pop_acot_workerdrone_bonus_workforce_mult = 0.2
 	}
 }
 
@@ -260,9 +260,9 @@ zone_starcage_world_minerals_alpha = {
 		number = 100
 	}
 	district_planet_modifier = {
-		miner_jobs_bonus_workforce_mult = 0.4
-		pop_acot_workerman_bonus_workforce_mult = 0.1
-		pop_acot_workerdrone_bonus_workforce_mult = 0.1
+		miner_jobs_bonus_workforce_mult = 0.5
+		pop_acot_workerman_bonus_workforce_mult = 0.2
+		pop_acot_workerdrone_bonus_workforce_mult = 0.2
 	}
 }
 
@@ -305,9 +305,9 @@ zone_starcage_world_food_alpha = {
 		number = 100
 	}
 	district_planet_modifier = {
-		farmer_jobs_bonus_workforce_mult = 0.4
-		pop_acot_workerman_bonus_workforce_mult = 0.1
-		pop_acot_workerdrone_bonus_workforce_mult = 0.1
+		farmer_jobs_bonus_workforce_mult = 0.5
+		pop_acot_workerman_bonus_workforce_mult = 0.2
+		pop_acot_workerdrone_bonus_workforce_mult = 0.2
 	}
 }
 
@@ -355,10 +355,10 @@ zone_starcage_world_industrial_alpha = {
 				country_uses_consumer_goods = yes
 			}
 		}
-		foundry_jobs_bonus_workforce_mult = 0.2
-		artisan_jobs_bonus_workforce_mult = 0.2
-		pop_acot_specialman_bonus_workforce_mult = 0.1
-		pop_acot_specialdrone_bonus_workforce_mult = 0.1
+		foundry_jobs_bonus_workforce_mult = 0.3
+		artisan_jobs_bonus_workforce_mult = 0.3
+		pop_acot_specialman_bonus_workforce_mult = 0.2
+		pop_acot_specialdrone_bonus_workforce_mult = 0.2
 	}
 	triggered_district_planet_modifier = {
 		potential = {
@@ -411,7 +411,7 @@ zone_starcage_world_unity_alpha = {
 		number = 100
 	}
 	district_planet_modifier = {
-		bureaucrat_jobs_bonus_workforce_mult = 0.3
+		bureaucrat_jobs_bonus_workforce_mult = 0.4
 	}
 }
 
@@ -453,7 +453,7 @@ zone_starcage_world_research_alpha = {
 		number = 100
 	}
 	district_planet_modifier = {
-		researcher_jobs_bonus_workforce_mult = 0.2
+		researcher_jobs_bonus_workforce_mult = 0.3
 	}
 }
 
@@ -496,7 +496,7 @@ zone_starcage_world_trade_alpha = {
 		number = 100
 	}
 	district_planet_modifier = {
-		trader_jobs_bonus_workforce_mult = 0.3
+		trader_jobs_bonus_workforce_mult = 0.4
 	}
 }
 
@@ -538,7 +538,7 @@ zone_starcage_world_fortress_alpha = {
 		number = 100
 	}
 	district_planet_modifier = {
-		pop_soldier_bonus_workforce_mult = 0.3
-		pop_warrior_drone_bonus_workforce_mult = 0.3
+		pop_soldier_bonus_workforce_mult = 0.4
+		pop_warrior_drone_bonus_workforce_mult = 0.4
 	}
 }
