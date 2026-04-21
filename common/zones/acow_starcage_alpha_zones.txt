@@ -1,0 +1,532 @@
+@buildtime = 720
+@zone_cost_minerals = 2000
+@zone_cost_alloys = 1000
+#####
+# Delta level starcage zones
+#####
+# Main
+zone_starcage_world_core_jobs_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		# Fallback to these zones if the potential is not met
+		zone_starcage_world_core_jobs
+	}
+	icon = GFX_acot_zone_dm_industry
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	include = {
+		all
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_core
+	}
+	district_planet_modifier = {
+		pop_bonus_workforce_mult = 0.1
+		planet_building_build_speed_mult = 0.1
+		planet_decision_enact_speed_mult = 0.1
+	}
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 50
+	}
+}
+
+zone_starcage_world_core_buildings_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_core_buildings
+	}
+	icon = GFX_acot_zone_dm_urban
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	include = {
+		all
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_core
+	}
+	district_planet_modifier = {
+		planet_housing_add = 1000
+		planet_buildings_produces_mult = 0.1
+		planet_building_build_speed_mult = 0.15
+	}
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 50
+	}
+}
+
+zone_starcage_world_core_amenities_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_core_amenities
+	}
+	icon = GFX_acot_zone_dm_unity
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	include = {
+		all
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_core
+	}
+	district_planet_modifier = {
+		planet_amenities_add = 1000
+		planet_jobs_unity_produces_mult = 0.15
+		planet_decision_enact_speed_mult = 0.15
+	}
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 50
+	}
+}
+
+# Secondary -- We are going to strip down some of originals
+zone_starcage_world_base_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_base
+	}
+	icon = GFX_acot_zone_dm_pylon
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		generator
+		mining
+		farming
+		hydroponics
+		fallen_empire_generator
+		fallen_empire_mining
+		fallen_empire_farming
+		automation
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_base
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		technician_jobs_bonus_workforce_mult = 0.2
+		miner_jobs_bonus_workforce_mult = 0.2
+		farmer_jobs_bonus_workforce_mult = 0.2
+		pop_acot_workerman_bonus_workforce_mult = 0.1
+		pop_acot_workerdrone_bonus_workforce_mult = 0.1
+	}
+}
+
+zone_starcage_world_energy_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_energy
+	}
+	icon = GFX_acot_zone_dm_energy
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		generator
+		fallen_empire_generator
+		automation
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_energy
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		technician_jobs_bonus_workforce_mult = 0.4
+		pop_acot_workerman_bonus_workforce_mult = 0.1
+		pop_acot_workerdrone_bonus_workforce_mult = 0.1
+	}
+}
+
+zone_starcage_world_minerals_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_minerals
+	}
+	icon = GFX_acot_zone_dm_mineral
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		mining
+		fallen_empire_mining
+		automation
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_minerals
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		miner_jobs_bonus_workforce_mult = 0.4
+		pop_acot_workerman_bonus_workforce_mult = 0.1
+		pop_acot_workerdrone_bonus_workforce_mult = 0.1
+	}
+}
+
+zone_starcage_world_food_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_food
+	}
+	icon = GFX_acot_zone_dm_food
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		farming
+		hydroponics
+		automation
+		fallen_empire_farming
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_food
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		farmer_jobs_bonus_workforce_mult = 0.4
+		pop_acot_workerman_bonus_workforce_mult = 0.1
+		pop_acot_workerdrone_bonus_workforce_mult = 0.1
+	}
+}
+
+zone_starcage_world_industrial_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_industrial
+	}
+	icon = GFX_acot_zone_dm_industry
+	base_buildtime = @zone_buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		industrial
+		automation
+		origin
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_industrial
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				country_uses_consumer_goods = yes
+			}
+		}
+		foundry_jobs_bonus_workforce_mult = 0.2
+		artisan_jobs_bonus_workforce_mult = 0.2
+		pop_acot_specialman_bonus_workforce_mult = 0.1
+		pop_acot_specialdrone_bonus_workforce_mult = 0.1
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				country_uses_consumer_goods = no
+			}
+		}
+		foundry_jobs_bonus_workforce_mult = 0.3
+		pop_acot_specialman_bonus_workforce_mult = 0.1
+		pop_acot_specialdrone_bonus_workforce_mult = 0.1
+	}
+}
+
+zone_starcage_world_unity_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_unity
+	}
+	icon = GFX_acot_zone_dm_unity
+	base_buildtime = @zone_buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		unity
+		automation
+		origin
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_unity
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		bureaucrat_jobs_bonus_workforce_mult = 0.3
+	}
+}
+
+zone_starcage_world_research_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_research
+	}
+	icon = GFX_acot_zone_dm_research
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		research
+		automation
+		origin
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_research
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		researcher_jobs_bonus_workforce_mult = 0.2
+	}
+}
+
+zone_starcage_world_trade_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_trade
+	}
+	icon = GFX_district_specialization_trade
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		urban
+		trade
+		automation
+		origin
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_trade
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		trader_jobs_bonus_workforce_mult = 0.3
+	}
+}
+
+zone_starcage_world_fortress_alpha = {
+	potential = {
+		exists = owner
+		owner = {
+		}
+		has_ascended_capital = yes
+	}
+	unlock = {
+	}
+	convert_to = {
+		zone_starcage_world_fortress
+	}
+	icon = GFX_district_specialization_fortress
+	base_buildtime = @buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		fortress
+		automation
+		origin
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_fortress
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	district_planet_modifier = {
+		pop_soldier_bonus_workforce_mult = 0.3
+		pop_warrior_drone_bonus_workforce_mult = 0.3
+	}
+}
