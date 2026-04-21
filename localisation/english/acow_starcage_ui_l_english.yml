@@ -1,0 +1,12 @@
+﻿l_english:
+  acow_starcage_management_title: "Starcage World Job Management"
+  acow_ui_remaining_points: "Remaining Points: §G[this.AOW_var_sw_points|0]§!"
+
+  acow_var_sw_points_acot_dark_energy_title: "Dark Energy"
+  acow_var_sw_points_acot_dark_matter_title: "Dark Matter"
+  acow_var_sw_points_acot_energy_title: "Energy"
+  acow_var_sw_points_acot_mineral_title: "Minerals"
+  acow_var_sw_points_acot_food_title: "Food"
+  acow_var_sw_points_acot_transmute_title: "Transmute"
+  acow_var_sw_points_acot_alloy_title: "Alloys"
+  acow_var_sw_points_acot_artisan_title: "Artisans"
