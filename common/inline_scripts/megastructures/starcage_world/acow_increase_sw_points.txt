@@ -1,7 +1,7 @@
 if = {
 	limit = {
 		check_variable = {
-			which = AOW_var_sw_points
+			which = acow_var_sw_max_points
 			value > 0
 		}
 	}
@@ -10,7 +10,7 @@ if = {
 		value = 1
 	}
 	change_variable = {
-		which = AOW_var_sw_points
+		which = acow_var_sw_max_points
 		value = -1
 	}
 }

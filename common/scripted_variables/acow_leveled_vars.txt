@@ -1,0 +1,2 @@
+# Starcage World
+@acow_var_max_sw_points_base = 30

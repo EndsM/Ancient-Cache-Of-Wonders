@@ -15,11 +15,11 @@ acow_decision_starcage_world = {
 		}
 	}
 	effect = {
-		# To avoid strange things, ensure the maximum exist first
+		# Alright, we use our set of points instead...
 		acow_init_if_not = {
-			key = AOW_var_sw_points
+			key = acow_var_sw_max_points
 			# TODO: Create a new upgrade level for this megastructure, that will increase the maximum
-			value = @AOW_var_max_sw_points
+			value = @acow_var_max_sw_points_base
 		}
 		# SR jobs
 		acow_init_if_not = {
