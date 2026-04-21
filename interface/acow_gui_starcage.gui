@@ -100,7 +100,7 @@ guiTypes = {
 				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
 				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_dark_energy_title format = center }
 				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_dark_energy }
-				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_dark_energy]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[From.acow_var_sw_points_acot_dark_energy]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_dark_energy }
 			}
 			containerWindowType = {
@@ -110,7 +110,7 @@ guiTypes = {
 				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
 				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_dark_matter_title format = center }
 				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_dark_matter }
-				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_dark_matter]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[From.acow_var_sw_points_acot_dark_matter]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_dark_matter }
 			}
 			containerWindowType = {
@@ -120,7 +120,7 @@ guiTypes = {
 				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
 				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_energy_title format = center }
 				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_energy }
-				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_energy]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[From.acow_var_sw_points_acot_energy]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_energy }
 			}
 
@@ -133,7 +133,7 @@ guiTypes = {
 				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
 				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_mineral_title format = center }
 				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_mineral }
-				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_mineral]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[From.acow_var_sw_points_acot_mineral]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_mineral }
 			}
 			containerWindowType = {
@@ -143,7 +143,7 @@ guiTypes = {
 				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
 				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_food_title format = center }
 				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_food }
-				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_food]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[From.acow_var_sw_points_acot_food]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_food }
 			}
 			containerWindowType = {
@@ -153,7 +153,7 @@ guiTypes = {
 				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
 				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_transmute_title format = center }
 				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_transmute }
-				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_transmute]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[From.acow_var_sw_points_acot_transmute]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_transmute }
 			}
 
@@ -166,7 +166,7 @@ guiTypes = {
 				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
 				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_alloy_title format = center }
 				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_alloy }
-				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_alloy]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[From.acow_var_sw_points_acot_alloy]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_alloy }
 			}
 			containerWindowType = {
@@ -176,7 +176,7 @@ guiTypes = {
 				background = { name = bg spriteType = GFX_tiles_dark_area_cut_8 }
 				effectButtonType = { name = title position = { x = 0 y = 0 } effect = acow_btn_sw_dummy size = { x = 200 y = 27 } buttonFont = "cg_16b" text = acow_var_sw_points_acot_artisan_title format = center }
 				effectButtonType = { name = de position = { x = 10 y = 27 } spriteType = GFX_button_left effect = acow_btn_sw_decr_artisan }
-				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[Root.acow_var_sw_points_acot_artisan]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
+				effectButtonType = { name = val position = { x = 50 y = 27 } size = { x = 100 y = 25 } text = "[From.acow_var_sw_points_acot_artisan]" buttonFont = "malgun_goth_24" effect = acow_btn_sw_dummy format = center }
 				effectButtonType = { name = in position = { x = 160 y = 27 } spriteType = GFX_button_right effect = acow_btn_sw_incr_artisan }
 			}
 		}
