@@ -236,3 +236,53 @@ zone_starcage_world_food_delta = {
 		pop_acot_workerdrone_bonus_workforce_mult = 0.1
 	}
 }
+
+zone_starcage_world_industrial_delta = {
+	icon = GFX_acot_zone_dm_industry
+	base_buildtime = @zone_buildtime
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost_minerals
+			alloys = @zone_cost_alloys
+		}
+	}
+	included_building_sets = {
+		industrial
+		automation
+		origin
+	}
+	zone_sets = {
+		zone_starcage_world
+		zone_starcage_world_secondary
+	}
+	swap_type = AOW_district_starcage_world_industrial
+	swap_type_weight = 5
+	inline_script = {
+		script = zones/acow_starcage_world_zone_jobs
+		number = 100
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				country_uses_consumer_goods = yes
+			}
+		}
+		foundry_jobs_bonus_workforce_mult = 0.2
+		artisan_jobs_bonus_workforce_mult = 0.2
+		pop_acot_specialman_bonus_workforce_mult = 0.1
+		pop_acot_specialdrone_bonus_workforce_mult = 0.1
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				country_uses_consumer_goods = no
+			}
+		}
+		foundry_jobs_bonus_workforce_mult = 0.3
+		pop_acot_specialman_bonus_workforce_mult = 0.1
+		pop_acot_specialdrone_bonus_workforce_mult = 0.1
+	}
+}
