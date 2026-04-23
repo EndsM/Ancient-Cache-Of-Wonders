@@ -1,0 +1,112 @@
+# Adding all of them with icon is quite a chore, just wait for ACOT to have them
+# Dark Energy
+defined_text = {
+	name = GetAcowDarkEnergyJobPlural
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = no
+		}
+		localization_key = job_acot_dark_energy_man_plural
+	}
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = yes
+		}
+		localization_key = job_acot_dark_energy_drone_plural
+	}
+}
+
+# Dark Matter
+defined_text = {
+	name = GetAcowDarkMatterJobPlural
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = no
+		}
+		localization_key = job_acot_dark_matter_man_plural
+	}
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = yes
+		}
+		localization_key = job_acot_dark_matter_drone_plural
+	}
+}
+
+# Researcher
+defined_text = {
+	name = GetAcowResearcherJobPlural
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = no
+		}
+		localization_key = job_acot_researcher_plural
+	}
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = yes
+		}
+		localization_key = job_acot_researcher_drone_plural
+	}
+}
+
+# Resources
+defined_text = {
+	name = GetAcowEnergyJobPlural
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = no
+		}
+		localization_key = job_acot_energyman_plural
+	}
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = yes
+		}
+		localization_key = job_acot_energydrone_plural
+	}
+}
+
+defined_text = {
+	name = GetAcowMineralJobPlural
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = no
+		}
+		localization_key = job_acot_mineralman_plural
+	}
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = yes
+		}
+		localization_key = job_acot_mineraldrone_plural
+	}
+}
+
+defined_text = {
+	name = GetAcowFoodJobPlural
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = no
+		}
+		localization_key = job_acot_foodman_plural
+	}
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = yes
+		}
+		localization_key = job_acot_fooddrone_plural
+	}
+}
