@@ -110,3 +110,57 @@ defined_text = {
 		localization_key = job_acot_fooddrone_plural
 	}
 }
+
+defined_text = {
+	name = GetAcowTransmuteJobPlural
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = no
+		}
+		localization_key = job_acot_transmute_man_plural
+	}
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = yes
+		}
+		localization_key = job_acot_transmute_drone_plural
+	}
+}
+
+defined_text = {
+	name = GetAcowAlloyJobPlural
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = no
+		}
+		localization_key = job_acot_alloyman_plural
+	}
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = yes
+		}
+		localization_key = job_acot_alloydrone_plural
+	}
+}
+
+defined_text = {
+	name = GetAcowArtisanJobPlural
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = no
+		}
+		localization_key = job_acot_artisan_plural
+	}
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = yes
+		}
+		localization_key = job_acot_artisan_drone_plural
+	}
+}
