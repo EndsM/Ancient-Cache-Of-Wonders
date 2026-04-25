@@ -17,6 +17,7 @@ acow_decision_starcage_world = {
 		}
 	}
 	effect = {
+		acow_check_do_we_need_update = yes
 		# Alright, we use our set of points instead...
 		acow_init_if_not = {
 			key = acow_var_sw_max_points
