@@ -21,7 +21,12 @@ acow_decision_starcage_world = {
 		acow_init_if_not = {
 			key = acow_var_sw_max_points
 			# TODO: Create a new upgrade level for this megastructure, that will increase the maximum
-			value = @acow_var_max_sw_points_base
+			# The tiered value is created, but still need to consider should we use a auto updater
+			value = value:acow_var_max_sw_points_dynamic
+		}
+		acow_init_if_not = {
+			key = acow_var_sw_max_points_log
+			value = value:acow_var_max_sw_points_dynamic
 		}
 		# SR jobs
 		acow_init_if_not = {

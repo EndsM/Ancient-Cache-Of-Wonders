@@ -64,7 +64,7 @@ acow_btn_sw_reset_all = {
 			# Restore the ACOW unallocated pool to max
 			set_variable = {
 				which = acow_var_sw_max_points
-				value = @acow_var_max_sw_points_base
+				value = value:acow_var_max_sw_points_dynamic
 			}
 		}
 	}
