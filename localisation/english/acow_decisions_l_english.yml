@@ -1,3 +1,4 @@
 ﻿l_english:
   acow_decision_starcage_world: "Config jobs from ACOW zones"
   acow_decision_starcage_world_desc: "Note that we are using our own set of job distribution points, and our jobs would coming from specializations, not the districts. You will also need to build ACOT tech infused zones to get our jobs. So you can get both original jobs and ACOT enhanced jobs from ACOW."
+  acow_check_do_we_need_update.yes: "§GDetect tech level change since last recorded, you will get extra points to spare.§!"

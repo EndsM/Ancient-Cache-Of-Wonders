@@ -23,26 +23,25 @@ acow_check_do_we_need_update = {
 				value < value:acow_var_max_sw_points_dynamic
 			}
 		}
-		set_variable = {
-			which = acow_temp_diff
-			value = value:acow_var_max_sw_points_dynamic
-		}
-		subtract_variable = {
-			which = acow_temp_diff
-			value = acow_var_sw_max_points_log
-		}
-		change_variable = {
-			which = acow_var_sw_max_points
-			value = acow_temp_diff
-		}
-		set_variable = {
-			which = acow_var_sw_max_points_log
-			value = value:acow_var_max_sw_points_dynamic
-		}
-		# Safer way to clear a variable across all Stellaris versions
-		set_variable = {
-			which = acow_temp_diff
-			value = 0
+		custom_tooltip = acow_check_do_we_need_update.yes
+		hidden_effect = {
+			set_variable = {
+				which = acow_temp_diff
+				value = value:acow_var_max_sw_points_dynamic
+			}
+			subtract_variable = {
+				which = acow_temp_diff
+				value = acow_var_sw_max_points_log
+			}
+			change_variable = {
+				which = acow_var_sw_max_points
+				value = acow_temp_diff
+			}
+			set_variable = {
+				which = acow_var_sw_max_points_log
+				value = value:acow_var_max_sw_points_dynamic
+			}
+			clear_variable = acow_temp_diff
 		}
 	}
 }
