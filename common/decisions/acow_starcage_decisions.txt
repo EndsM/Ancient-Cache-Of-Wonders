@@ -17,7 +17,6 @@ acow_decision_starcage_world = {
 		}
 	}
 	effect = {
-		acow_check_do_we_need_update = yes
 		# Alright, we use our set of points instead...
 		acow_init_if_not = {
 			key = acow_var_sw_max_points
@@ -29,6 +28,8 @@ acow_decision_starcage_world = {
 			key = acow_var_sw_max_points_log
 			value = value:acow_var_max_sw_points_dynamic
 		}
+		# Check if player now have higher tech level
+		acow_check_do_we_need_update = yes
 		# SR jobs
 		acow_init_if_not = {
 			# Unified var for man and drone

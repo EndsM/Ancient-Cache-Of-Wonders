@@ -17,7 +17,11 @@ acow_check_do_we_need_update = {
 		limit = {
 			is_variable_set = acow_var_sw_max_points_log
 			is_variable_set = acow_var_sw_max_points
-			value:acow_var_max_sw_points_dynamic > acow_var_sw_max_points_log
+			# CORRECT SYNTAX FOR COMPARISON
+			check_variable = {
+				which = acow_var_sw_max_points_log
+				value < value:acow_var_max_sw_points_dynamic
+			}
 		}
 		set_variable = {
 			which = acow_temp_diff
@@ -35,7 +39,10 @@ acow_check_do_we_need_update = {
 			which = acow_var_sw_max_points_log
 			value = value:acow_var_max_sw_points_dynamic
 		}
-		# Clean the temp
-		clear_variable = acow_temp_diff
+		# Safer way to clear a variable across all Stellaris versions
+		set_variable = {
+			which = acow_temp_diff
+			value = 0
+		}
 	}
 }
