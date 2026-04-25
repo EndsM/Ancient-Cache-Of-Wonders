@@ -1,0 +1,15 @@
+acow_var_max_sw_points_dynamic = {
+	base = @acow_var_max_sw_points_base
+	modifier = {
+		owner = {
+			has_technology = tech_dark_matter_power_core_ae
+		}
+		add = 10
+	}
+	modifier = {
+		owner = {
+			has_technology = tech_dark_matter_power_core_se
+		}
+		add = 10
+	}
+}
